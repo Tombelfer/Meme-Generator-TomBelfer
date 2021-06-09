@@ -1,0 +1,99 @@
+
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url(/fonts/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(/fonts/Poppins-Regular.ttf);
+}
+
+/* Base */
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Poppins-Light, sans-serif;
+    color: white;
+}
+
+body{
+    margin: 0;
+    background-color: #22252C;
+    font-size: 1.375rem;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family:Poppins-Medium, sans-serif ;
+}
+
+img{
+    width: 100%;
+}
+/* Header */
+
+.main-header{
+    background:linear-gradient(to left ,#0F9AB4,#30BB73);
+    height: 74px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.main-header .logo{
+    margin-inline-start: 82px;
+}
+
+.nav-bar {
+    margin-inline-end: 225.5px;
+}
+
+.link a {
+    padding: 9.5px 21.5px;
+}
+
+/* GALLERY */
+
+.img-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 201px);
+    grid-template-rows: repeat(auto-fit ,174px);
+    gap: 25px 29px;
+    justify-content: center;
+    /* margin: auto; */
+}
+.img-gallery img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* Helpers */
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.grid {
+    display: grid;
+}
